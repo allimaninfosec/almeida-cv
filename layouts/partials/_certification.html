@@ -8,7 +8,7 @@
             {{ range .Certification }}
             <li>{{ .Cert | safeHTML }}
                 {{ .body | safeHTML }}</br>
-                Experation: {{ .Expires | safeHTML }}<br>
+                Expiration: {{ .Expires | safeHTML }}<br>
                 Certification #: {{ .Cert_ID | safeHTML }}</li>
             {{ end }}
         </ul>
